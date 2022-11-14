@@ -17,11 +17,10 @@ let para = document.getElementById('parahover');
     para.addEventListener('mouseover', changeColor);
 
 //function three, changes the back with a keystroke (space)
-
 function backColor(){
     document.body.style.backgroundColor = `orange`;
 }
-
+//window eventlistener for keydowns, passing the event into a switch-case command with my function.
     window.addEventListener(`keydown`, e =>{
         switch(e.code){
             case `Space`:
